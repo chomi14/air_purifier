@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1840" viewBox="0 0 2000 1840"><rect width="2000" height="1840" fill="#f5f8fc"/>
+<text x="40" y="55" font-family="NanumGothic" font-size="36" fill="#203650" font-weight="700">ESP32-S3 · 현재 조립 상태와 남은 배선</text>
+<text x="40" y="99" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="400">리미트 스위치 없음  |  24V 4선 PWM 팬 가정  |  사용자 설명 기준 · 실물 접속 검증 아님</text>
+<path d="M40 143 H120" stroke="#7555b4" stroke-width="4"/><path d="M430 143 H510" stroke="#7555b4" stroke-width="4" stroke-dasharray="10 8"/>
+<text x="140" y="151" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="400">실선: 연결했다고 알려준 구간</text>
+<text x="530" y="151" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="400">점선: 전원부·팬 등 남은 연결</text>
+<text x="40" y="195" font-family="NanumGothic" font-size="23" fill="#203650" font-weight="700">신호 배선 · GPIO 숫자는 보드에 인쇄된 번호 / 전원·GND 연결은 아래 전원부에서 확인</text>
+<rect x="40" y="270" width="360" height="368" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="58" y="305" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">TB6600 드라이버</text>
+<text x="58" y="351" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">PUL−</text>
+<text x="58" y="389" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">DIR−</text>
+<text x="58" y="427" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">ENA−</text>
+<text x="58" y="465" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">PUL+ / DIR+ / ENA+ → 5V</text>
+<text x="58" y="503" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">VCC → 24V</text>
+<text x="58" y="541" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GND → 공통 GND</text>
+<text x="58" y="579" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">A+ / A− → 코일 A</text>
+<text x="58" y="617" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">B+ / B− → 코일 B</text>
+<rect x="500" y="270" width="310" height="292" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="518" y="305" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">2N3904 · Q1 / Q2 / Q3</text>
+<text x="518" y="351" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q1 B ← 1kΩ</text>
+<text x="518" y="389" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q2 B ← 1kΩ</text>
+<text x="518" y="427" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q3 B ← 1kΩ</text>
+<text x="518" y="465" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q1 C → PUL−</text>
+<text x="518" y="503" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q2 C → DIR−</text>
+<text x="518" y="541" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q3 C → ENA−</text>
+<rect x="910" y="270" width="350" height="406" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="928" y="305" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">ESP32-S3</text>
+<text x="928" y="351" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">USB ← 노트북</text>
+<text x="928" y="389" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO8 · I²C SDA</text>
+<text x="928" y="427" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO9 · I²C SCL</text>
+<text x="928" y="465" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO16 · STEP</text>
+<text x="928" y="503" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO17 · DIR</text>
+<text x="928" y="541" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO18 · ENABLE</text>
+<text x="928" y="579" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO21 · 서보 신호</text>
+<text x="928" y="617" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO4 · 팬 PWM</text>
+<text x="928" y="655" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GPIO5 / 10 / 12 미사용</text>
+<path d="M910 458 H855 V344 H810" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="910" cy="458" r="4" fill="#7555b4"/>
+<circle cx="810" cy="344" r="4" fill="#7555b4"/>
+<path d="M910 496 H871 V382 H810" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="910" cy="496" r="4" fill="#7555b4"/>
+<circle cx="810" cy="382" r="4" fill="#7555b4"/>
+<path d="M910 534 H887 V420 H810" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="910" cy="534" r="4" fill="#7555b4"/>
+<circle cx="810" cy="420" r="4" fill="#7555b4"/>
+<path d="M500 458 H430 V344 H400" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="500" cy="458" r="4" fill="#7555b4"/>
+<circle cx="400" cy="344" r="4" fill="#7555b4"/>
+<path d="M500 496 H447 V382 H400" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="500" cy="496" r="4" fill="#7555b4"/>
+<circle cx="400" cy="382" r="4" fill="#7555b4"/>
+<path d="M500 534 H464 V420 H400" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="500" cy="534" r="4" fill="#7555b4"/>
+<circle cx="400" cy="420" r="4" fill="#7555b4"/>
+<rect x="1370" y="270" width="265" height="444" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="1388" y="305" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">PCA9548A</text>
+<text x="1388" y="351" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SDA</text>
+<text x="1388" y="389" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SCL</text>
+<text x="1388" y="427" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SD0</text>
+<text x="1388" y="465" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SC0</text>
+<text x="1388" y="503" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SD1</text>
+<text x="1388" y="541" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SC1</text>
+<text x="1388" y="579" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SD2</text>
+<text x="1388" y="617" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SC2</text>
+<text x="1388" y="655" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SD3</text>
+<text x="1388" y="693" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SC3</text>
+<path d="M1260 382 H1300 V344 H1370" fill="none" stroke="#00977c" stroke-width="3"/>
+<circle cx="1260" cy="382" r="4" fill="#00977c"/>
+<circle cx="1370" cy="344" r="4" fill="#00977c"/>
+<path d="M1260 420 H1320 V382 H1370" fill="none" stroke="#277cce" stroke-width="3"/>
+<circle cx="1260" cy="420" r="4" fill="#277cce"/>
+<circle cx="1370" cy="382" r="4" fill="#277cce"/>
+<rect x="1740" y="245" width="220" height="140" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="1758" y="280" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">SGP40 #1</text>
+<text x="1758" y="326" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SDA · 입구 A</text>
+<text x="1758" y="364" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SCL</text>
+<path d="M1635 420 H1650 V319 H1740" fill="none" stroke="#00977c" stroke-width="3"/>
+<circle cx="1635" cy="420" r="4" fill="#00977c"/>
+<circle cx="1740" cy="319" r="4" fill="#00977c"/>
+<path d="M1635 458 H1695 V357 H1740" fill="none" stroke="#277cce" stroke-width="3"/>
+<circle cx="1635" cy="458" r="4" fill="#277cce"/>
+<circle cx="1740" cy="357" r="4" fill="#277cce"/>
+<rect x="1740" y="420" width="220" height="140" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="1758" y="455" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">SGP40 #2</text>
+<text x="1758" y="501" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SDA · 입구 B</text>
+<text x="1758" y="539" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SCL</text>
+<path d="M1635 496 H1659 V494 H1740" fill="none" stroke="#00977c" stroke-width="3"/>
+<circle cx="1635" cy="496" r="4" fill="#00977c"/>
+<circle cx="1740" cy="494" r="4" fill="#00977c"/>
+<path d="M1635 534 H1704 V532 H1740" fill="none" stroke="#277cce" stroke-width="3"/>
+<circle cx="1635" cy="534" r="4" fill="#277cce"/>
+<circle cx="1740" cy="532" r="4" fill="#277cce"/>
+<rect x="1740" y="595" width="220" height="140" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="1758" y="630" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">SGP40 #3</text>
+<text x="1758" y="676" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SDA · 출구 A</text>
+<text x="1758" y="714" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SCL</text>
+<path d="M1635 572 H1668 V669 H1740" fill="none" stroke="#00977c" stroke-width="3"/>
+<circle cx="1635" cy="572" r="4" fill="#00977c"/>
+<circle cx="1740" cy="669" r="4" fill="#00977c"/>
+<path d="M1635 610 H1713 V707 H1740" fill="none" stroke="#277cce" stroke-width="3"/>
+<circle cx="1635" cy="610" r="4" fill="#277cce"/>
+<circle cx="1740" cy="707" r="4" fill="#277cce"/>
+<rect x="1740" y="770" width="220" height="140" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="1758" y="805" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">SGP40 #4</text>
+<text x="1758" y="851" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SDA · 출구 B</text>
+<text x="1758" y="889" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">SCL</text>
+<path d="M1635 648 H1677 V844 H1740" fill="none" stroke="#00977c" stroke-width="3"/>
+<circle cx="1635" cy="648" r="4" fill="#00977c"/>
+<circle cx="1740" cy="844" r="4" fill="#00977c"/>
+<path d="M1635 686 H1722 V882 H1740" fill="none" stroke="#277cce" stroke-width="3"/>
+<circle cx="1635" cy="686" r="4" fill="#277cce"/>
+<circle cx="1740" cy="882" r="4" fill="#277cce"/>
+<rect x="40" y="690" width="360" height="140" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="58" y="725" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">17HS1352-P4130</text>
+<text x="58" y="771" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">코일 A 한 쌍</text>
+<text x="58" y="809" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">코일 B 한 쌍</text>
+<path d="M40 572 H18 V764 H40" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="40" cy="572" r="4" fill="#7555b4"/>
+<circle cx="40" cy="764" r="4" fill="#7555b4"/>
+<path d="M40 610 H30 V802 H40" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="40" cy="610" r="4" fill="#7555b4"/>
+<circle cx="40" cy="802" r="4" fill="#7555b4"/>
+<text x="500" y="620" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q1·Q2: B → 10kΩ → GND</text>
+<text x="500" y="656" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q3: B → 10kΩ → 3V3 [1]</text>
+<text x="500" y="692" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">Q1~Q3 E → 공통 GND</text>
+<text x="500" y="728" font-family="NanumGothic" font-size="19" fill="#203650" font-weight="400">B/C/E 순서는 제조사 표기 확인</text>
+<rect x="910" y="740" width="350" height="178" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="928" y="775" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">MG90S 서보</text>
+<text x="928" y="821" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">신호 · 주황/노랑</text>
+<text x="928" y="859" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">빨강 → 5V</text>
+<text x="928" y="897" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">갈색/검정 → GND</text>
+<path d="M910 572 H882 V814 H910" fill="none" stroke="#7555b4" stroke-width="3"/>
+<circle cx="910" cy="572" r="4" fill="#7555b4"/>
+<circle cx="910" cy="814" r="4" fill="#7555b4"/>
+<text x="1370" y="765" font-family="NanumGothic" font-size="19" fill="#203650" font-weight="400">PCA: A0/A1/A2 → GND</text>
+<text x="1370" y="799" font-family="NanumGothic" font-size="19" fill="#203650" font-weight="400">RST → 10kΩ → 3V3</text>
+<text x="1370" y="833" font-family="NanumGothic" font-size="19" fill="#203650" font-weight="400">센서 4개 VCC → 3V3</text>
+<text x="1370" y="867" font-family="NanumGothic" font-size="19" fill="#203650" font-weight="400">PCA·센서 GND → 공통 GND</text>
+<rect x="910" y="980" width="350" height="216" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="928" y="1015" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">팬용 Q4 · 아직 미연결</text>
+<text x="928" y="1061" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">B ← 1kΩ</text>
+<text x="928" y="1099" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">C → 팬 PWM</text>
+<text x="928" y="1137" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">E → GND</text>
+<text x="928" y="1175" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">B → 10kΩ → GND</text>
+<path d="M910 610 H865 V1054 H910" fill="none" stroke="#7555b4" stroke-width="3" stroke-dasharray="10 8"/>
+<circle cx="910" cy="610" r="4" fill="#7555b4"/>
+<circle cx="910" cy="1054" r="4" fill="#7555b4"/>
+<rect x="1440" y="980" width="520" height="216" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="1458" y="1015" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">24V 4선 PWM 블로워 · 미연결</text>
+<text x="1458" y="1061" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">PWM 입력 (신호)</text>
+<text x="1458" y="1099" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">전원 + → 24V</text>
+<text x="1458" y="1137" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">전원 − → 공통 GND</text>
+<text x="1458" y="1175" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">FG/TACH → 연결 안 함 · 끝 절연</text>
+<path d="M1260 1092 H1350 V1054 H1440" fill="none" stroke="#7555b4" stroke-width="3" stroke-dasharray="10 8"/>
+<circle cx="1260" cy="1092" r="4" fill="#7555b4"/>
+<circle cx="1440" cy="1054" r="4" fill="#7555b4"/>
+<text x="40" y="942" font-family="NanumGothic" font-size="26" fill="#203650" font-weight="700">전원 연결 · 전원 이름이 같은 단자는 같은 전원망</text>
+<rect x="40" y="980" width="345" height="140" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="58" y="1015" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">24V DC 파워서플라이</text>
+<text x="58" y="1061" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">DC +24V</text>
+<text x="58" y="1099" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">DC − / GND</text>
+<rect x="500" y="980" width="310" height="140" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="518" y="1015" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">24V 부하</text>
+<text x="518" y="1061" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">TB6600 VCC / 팬 +</text>
+<text x="518" y="1099" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">TB6600 GND / 팬 −</text>
+<path d="M385 1054 H442.5 V1054 H500" fill="none" stroke="#d64b50" stroke-width="3" stroke-dasharray="10 8"/>
+<circle cx="385" cy="1054" r="4" fill="#d64b50"/>
+<circle cx="500" cy="1054" r="4" fill="#d64b50"/>
+<path d="M385 1092 H442.5 V1092 H500" fill="none" stroke="#536679" stroke-width="3" stroke-dasharray="10 8"/>
+<circle cx="385" cy="1092" r="4" fill="#536679"/>
+<circle cx="500" cy="1092" r="4" fill="#536679"/>
+<rect x="40" y="1200" width="345" height="178" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="58" y="1235" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">ESP32-S3 전원 핀</text>
+<text x="58" y="1281" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">3V3</text>
+<text x="58" y="1319" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">5V / 5Vin [2]</text>
+<text x="58" y="1357" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">GND</text>
+<rect x="500" y="1200" width="760" height="216" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="518" y="1235" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">전원 분기 · 연결상태를 보수적으로 표시</text>
+<text x="518" y="1281" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">PCA VIN + SGP40 4개 VCC + 3V3 바이어스</text>
+<text x="518" y="1319" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">TB6600 신호+ 3개 + MG90S 빨강 [2]</text>
+<text x="518" y="1357" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">PCA·센서·Q1~Q3·서보 GND</text>
+<text x="518" y="1395" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">추가: 파워서플라이 − / 팬 − / Q4 E → 공통 GND</text>
+<path d="M385 1274 H442.5 V1274 H500" fill="none" stroke="#ad3898" stroke-width="3"/>
+<circle cx="385" cy="1274" r="4" fill="#ad3898"/>
+<circle cx="500" cy="1274" r="4" fill="#ad3898"/>
+<path d="M385 1312 H442.5 V1312 H500" fill="none" stroke="#bc810e" stroke-width="3" stroke-dasharray="10 8"/>
+<circle cx="385" cy="1312" r="4" fill="#bc810e"/>
+<circle cx="500" cy="1312" r="4" fill="#bc810e"/>
+<path d="M385 1350 H442.5 V1350 H500" fill="none" stroke="#536679" stroke-width="3"/>
+<circle cx="385" cy="1350" r="4" fill="#536679"/>
+<circle cx="500" cy="1350" r="4" fill="#536679"/>
+<path d="M385 1350 H455 V1388 H500" fill="none" stroke="#536679" stroke-width="3" stroke-dasharray="10 8"/>
+<circle cx="385" cy="1350" r="4" fill="#536679"/>
+<circle cx="500" cy="1388" r="4" fill="#536679"/>
+<rect x="1440" y="1230" width="520" height="102" rx="13" fill="white" stroke="#bfcede" stroke-width="2"/>
+<text x="1458" y="1265" font-family="NanumGothic" font-size="22" fill="#203650" font-weight="700">노트북 USB → ESP32-S3</text>
+<text x="1458" y="1311" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">현재 USB 전원 / 업로드 연결 유지</text>
+<text x="1440" y="1390" font-family="NanumGothic" font-size="20" fill="#203650" font-weight="400">5V 전원선 연결 여부는 미확정이라 점선.</text>
+<text x="1440" y="1425" font-family="NanumGothic" font-size="18" fill="#203650" font-weight="400">이미 연결했다면 해당 구간만 실선으로 보면 됨.</text>
+<rect x="40" y="1485" width="1920" height="310" rx="16" fill="#fff3df" stroke="#dfbf86"/>
+<text x="60" y="1527" font-family="NanumGothic" font-size="21" fill="#795523" font-weight="400">[1] ENA 광입력 ON = 모터 해제 제품을 가정한 Q3 바이어스. 실제 드라이버의 ENABLE 극성 확인 필요.</text>
+<text x="60" y="1564" font-family="NanumGothic" font-size="21" fill="#795523" font-weight="400">[2] 보드 5V를 분기하는 안. 드라이버 신호 전원과 서보를 함께 공급할 전류 여유는 USB·보드·서보 부하에 따라 확인해야 함.</text>
+<text x="60" y="1601" font-family="NanumGothic" font-size="21" fill="#795523" font-weight="400">     서보 동작 중 리셋/전압강하가 있으면 서보 전원은 별도 24V→5V 강압으로 분리. 외부 5V를 USB 5V와 임의 병렬 연결하지 않음.</text>
+<text x="60" y="1638" font-family="NanumGothic" font-size="21" fill="#795523" font-weight="400">팬 모델 미확정: PWM 입력이 오픈컬렉터 구동을 지원하는 제품 기준. 커넥터 핀 순서·입력 정격·PWM 주파수·0% 정지 확인.</text>
+<text x="60" y="1675" font-family="NanumGothic" font-size="21" fill="#795523" font-weight="400">리미트 스위치 제거: GPIO10/12 배선 없음. 이 저장소 .ino는 스위치 없는 버전이며 수동 위치 정렬 후 z → a로 시작.</text>
+<text x="60" y="1712" font-family="NanumGothic" font-size="21" fill="#795523" font-weight="400">스위치 없는 코드에서는 시작 위치 수동 정렬 + 정해진 스텝/시간 사용. 원점·게이트 닫힘·걸림을 실제로 확인할 수 없음.</text>
+<text x="60" y="1749" font-family="NanumGothic" font-size="21" fill="#795523" font-weight="400">실선은 사용자 설명에 따른 표시이며 접속/극성 검증을 뜻하지 않음. 24V는 ESP32·센서·서보·드라이버 신호+에 연결 금지.</text>
+</svg>
